@@ -5,6 +5,7 @@ let guestScoreEl = document.getElementById("guest-score")
 homeScoreEl.textContent = homeScore
 guestScoreEl.textContent = guestScore
 
+let resetBtn = document.getElementById("reset-score")
 let homePlusOne = document.getElementById("plus-one-home")
 let homePlusTwo = document.getElementById("plus-two-home")
 let homePlusThree = document.getElementById("plus-three-home")
@@ -45,4 +46,12 @@ guestPlusThree.addEventListener("click", function(){
     guestScore += 3
     guestScoreEl.innerHTML = `${guestScore}`
     console.log(guestScore)
+})
+
+resetBtn.addEventListener("click", function(){
+    homeScore = 0
+    guestScore = 0
+    homeScoreEl.innerHTML = `${homeScore}`
+    guestScoreEl.innerHTML = `${guestScore}`
+
 })
