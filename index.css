@@ -53,3 +53,9 @@ button:hover {
     background-color: #fff;
     color: black;
 }
+
+.reset {
+    padding: 3em;
+    display: flex;
+    justify-content: center;
+}
